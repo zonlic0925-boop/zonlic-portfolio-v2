@@ -592,7 +592,8 @@ table {
 .general__view {
   display: grid;
   grid-template-columns: auto minmax(1.5rem, 1fr) auto;
-  gap: clamp(1.25rem, 2.5vw, 2.5rem);
+  column-gap: 0;
+  row-gap: clamp(1.25rem, 2.5vw, 2.5rem);
   align-items: center;
 }
 
@@ -634,6 +635,18 @@ table {
   display: block;
 }
 
+html[lang='zh-HK'] .part__role {
+  max-width: 26em;
+}
+
+/* Stricter CJK line breaking: no stranded short last line in a table cell. */
+html[lang='zh-HK'] .record__cell,
+html[lang='zh-HK'] .prose,
+html[lang='zh-HK'] .note-line__text,
+html[lang='zh-HK'] .revisions__details li {
+  line-break: strict;
+}
+
 .part__alias {
   font-family: var(--font-mono);
   font-size: clamp(0.74rem, 0.9vw, 0.88rem);
@@ -646,6 +659,7 @@ table {
 .part__role {
   margin-top: 1.1rem;
   max-width: 42ch;
+  overflow-wrap: break-word;
   font-size: clamp(1rem, 1.2vw, 1.22rem);
   line-height: 1.45;
   color: var(--ink-2);
@@ -659,9 +673,9 @@ table {
   border: 1px solid var(--rule-2);
   background: var(--paper-raised);
   padding: 0.75rem;
-  width: 100%;
-  max-width: min(100%, 460px, calc((100dvh - 360px) * 0.8));
-  margin-left: auto;
+  width: min(460px, calc((100dvh - 360px) * 0.8));
+  max-width: 100%;
+  margin-left: 0;
 }
 
 .detail__img {
@@ -1855,7 +1869,8 @@ table {
 
   .detail {
     margin-left: 0;
-    max-width: min(100%, 300px, calc(100dvh - 460px));
+    width: min(300px, calc(100dvh - 460px));
+    max-width: 100%;
   }
 
   .leader {
@@ -1960,7 +1975,7 @@ table {
   }
 
   .general__view {
-    gap: 1.35rem;
+    row-gap: 1.35rem;
   }
 
   .part__role {

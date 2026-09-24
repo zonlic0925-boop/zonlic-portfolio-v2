@@ -234,7 +234,7 @@ function plateAttachment(item) {
     </figure>`
 }
 
-function plateDemo(demo, index, copy) {
+function plateDemo(demo, index, copy, compact = false) {
   return `
     <figure class="plate">
       <button type="button" class="plate__frame" data-demo="${project(demo.file)}"
@@ -246,7 +246,7 @@ function plateDemo(demo, index, copy) {
       <figcaption class="plate__caption">
         <span class="plate__label">${esc(copy.ui.figure)} ${index + 1}</span>
         <span class="plate__title">${esc(demo.title)}</span>
-        <span class="plate__text">${esc(demo.description)}</span>
+        ${compact ? '' : `<span class="plate__text">${esc(demo.description)}</span>`}
 
       </figcaption>
     </figure>`
@@ -341,7 +341,7 @@ function renderZoneC() {
               (demo) => `
           <div class="view__dev">
             <div class="plates plates--single">
-              ${plateDemo(demo, view.demos.indexOf(demo), copy)}
+              ${plateDemo(demo, view.demos.indexOf(demo), copy, true)}
             </div>
             <div class="view__dev-note">
               <span class="field-label">${esc(demo.status)}</span>
