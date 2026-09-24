@@ -388,7 +388,7 @@ export const content = {
           balloon: '03',
           characteristic: '科研與儀器分析',
           method: '設計實驗並以 HPLC、GC-MS、紫外可見分光光度計進行精密測試，解讀數據並用於論文。',
-          evidence: '兩篇 SCI 論文：MOF-TiO2 光催化、Cu(I) 發光壓致變色。',
+          evidence: '兩篇 SCI 論文：光催化 MOF-TiO2 與 Cu(I) 壓致變色材料。',
           ref: '修訂 A',
           target: 'rev-a',
         },
@@ -403,7 +403,7 @@ export const content = {
         {
           balloon: '05',
           characteristic: '報告與流程自動化',
-          method: '以 Word、Excel 撰寫結構化報告，以 Power Automate 自動化流程，以 Power BI 搭建看板，以 Python 編寫 OCR 與 PDF 管線。',
+          method: '以 Word、Excel 撰寫結構化報告；Power Automate 自動化流程；Power BI 搭建看板；Python 編寫 OCR 與 PDF 管線。',
           evidence: '美的認證文件包與五邑大學科研數據整理。',
           ref: '修訂 B',
           target: 'rev-b',
