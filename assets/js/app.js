@@ -115,7 +115,7 @@ function renderZoneA() {
       <span class="leader draw-in--2" aria-hidden="true"></span>
       <figure class="detail draw-in draw-in--2">
         <img class="detail__img" src="${portrait}" width="819" height="1024"
-             alt="${esc(`${PERSON.name} (${PERSON.alias}), portrait photograph`)}"
+             alt="${esc(`${PERSON.name} (${PERSON.alias}), stylised portrait illustration`)}"
              fetchpriority="high" decoding="async" />
         <figcaption class="detail__caption">
           <span class="field-label">${esc(copy.general.caption)}</span>

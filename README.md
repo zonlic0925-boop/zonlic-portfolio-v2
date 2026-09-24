@@ -26,10 +26,11 @@ assets/js/content.js        every visitor-facing string, English and Traditional
 assets/js/app.js            the renderer and all interaction
 assets/js/icons.js          Phosphor icon paths (MIT), vendored because there is no build
 assets/fonts/               Barlow + Azeret Mono, latin and latin-ext WOFF2
-assets/img/                 portrait and favicon
+assets/img/                 portrait render, its source, and the favicon
 assets/projects/            real screenshots, demo clips, poster frames, campus and press images
 tools/fetch-fonts.mjs       re-pull the font subsets
 tools/make-posters.mjs      re-extract the demo poster frames with ffmpeg
+tools/make-portrait.py      re-crop and grade the portrait render (opencv + PIL)
 PRODUCT.md                  product truth: users, purpose, constraints, evidence on hand
 DESIGN.md                   the built visual system
 ```
@@ -65,7 +66,8 @@ JPEG comment. Read one with:
 node <impeccable>/scripts/embed-prompt.mjs assets/img/portrait.png --read
 ```
 
-The ZonKey screenshots, the campus and press photographs, the portrait and the QR code are the
-owner's own material, carried over from the previous portfolio repository. The Dragon Balloon
-poster frames are extracted from the owner's own screen recordings. Nothing on this sheet is stock
-imagery and nothing is generated.
+The ZonKey screenshots, the campus and press photographs and the QR code are the owner's own
+material, carried over from the previous portfolio repository. The Dragon Balloon poster frames are
+extracted from the owner's own screen recordings. The portrait is the owner's own stylised render,
+cropped and graded by `tools/make-portrait.py`; its untouched source sits beside it as
+`portrait-render-src.png`. Nothing on this sheet is stock imagery and nothing is generated here.

@@ -672,7 +672,7 @@ html[lang='zh-HK'] .revisions__details li {
   position: relative;
   border: 1px solid var(--rule-2);
   background: var(--paper-raised);
-  padding: 0.75rem;
+  padding: 1rem;
   width: min(460px, calc((100dvh - 360px) * 0.8));
   max-width: 100%;
   margin-left: 0;
@@ -682,7 +682,6 @@ html[lang='zh-HK'] .revisions__details li {
   width: 100%;
   height: auto;
   border: 1px solid var(--rule);
-  filter: saturate(0.92);
 }
 
 .detail__caption {
@@ -1990,7 +1989,7 @@ html[lang='zh-HK'] .revisions__details li {
   /* The portrait is the hero's only human evidence; it earns more than a stamp. */
   .detail__img {
     aspect-ratio: 1 / 1;
-    object-position: center 12%;
+    object-position: center 15%;
   }
 
   .lang-btn {
