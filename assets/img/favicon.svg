@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Zonlic">
+  <rect width="32" height="32" fill="#eef0ed" />
+  <circle cx="12.5" cy="12.5" r="7" fill="none" stroke="#1b4d8f" stroke-width="2.5" />
+  <path d="M17.6 17.6 27 27" stroke="#1b4d8f" stroke-width="2.5" stroke-linecap="square" />
+</svg>

@@ -1,0 +1,7 @@
+# Review captures and local tooling output: evidence, not deliverables.
+.impeccable/
+
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store
